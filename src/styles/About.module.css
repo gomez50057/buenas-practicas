@@ -1,0 +1,86 @@
+/* AboutUs.module.css */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem;
+  background: var(--blanco);
+  margin: 2rem 0;
+}
+
+.imageContainer {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 550px;
+  height: auto;
+  animation: floatingAnimation 1.8s infinite alternate ease-in-out;
+}
+
+@keyframes floatingAnimation {
+  0% {
+    transform: translateY(0);
+    filter: drop-shadow(0 50px 20px rgba(184, 175, 175, 0.5));
+  }
+
+  100% {
+    transform: translateY(-30px);
+    filter: drop-shadow(0 10px 20px rgba(184, 175, 175, 0.9));
+  }
+}
+
+.textContainer {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.textContainer h1 {
+  margin: 0;
+}
+
+.text {
+  color: var(--grisOsc);
+  text-align: justify;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.text span {
+  font-weight: 600;
+}
+
+.textContainer>.text:first-of-type span {
+  font-weight: 700;
+  font-size: 1.35rem;
+}
+
+
+@media (max-width: 600px) {
+
+  .image {
+    width: 200px;
+  }
+
+  .textContainer {
+    flex: 1 1 100%;
+    padding: 0.5rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+
+  .imageContainer {
+    flex: 0;
+  }
+}
