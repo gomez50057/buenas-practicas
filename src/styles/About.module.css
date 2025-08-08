@@ -4,7 +4,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   margin-top: 2rem;
   background: #FFF;
   border-radius: 4rem 4rem 0 0;
@@ -19,7 +19,7 @@
 }
 
 .image {
-  width: 550px;
+  width: 500px;
   height: auto;
   animation: floatingAnimation 1.8s infinite alternate ease-in-out;
 }

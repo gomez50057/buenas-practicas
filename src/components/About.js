@@ -2,7 +2,6 @@
 
 import { forwardRef, useRef, useState, useEffect, memo } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
-import Image from 'next/image';
 import styles from '@/styles/About.module.css';
 
 const imgSrc = '/img/aboutSection.png';
@@ -10,21 +9,21 @@ const imgSrc = '/img/aboutSection.png';
 // Variantes de animación
 const imageVariant = {
   hidden: { opacity: 0, scale: 0.5 },
-  show:   { opacity: 1, scale: 1, transition: { duration: 0.5 } }
+  show: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
 };
 const textContainerVariant = {
   hidden: {},
-  show:   { transition: { staggerChildren: 0.2, delayChildren: 0.3 } }
+  show: { transition: { staggerChildren: 0.2, delayChildren: 0.3 } }
 };
 const textVariant = {
   hidden: { opacity: 0, y: 20 },
-  show:   { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
 };
 
 const AboutSection = forwardRef(function AboutSection(_, ref) {
   // Refs para desktop y móvil
   const sectionRef = useRef(null);
-  const blockRef   = useRef(null);
+  const blockRef = useRef(null);
 
   // Detectar si estamos en vista móvil
   const [isMobile, setIsMobile] = useState(false);
@@ -38,7 +37,7 @@ const AboutSection = forwardRef(function AboutSection(_, ref) {
   // Elegimos ref y opciones de useInView según dispositivo
   const triggerRef = isMobile ? blockRef : sectionRef;
   const inView = useInView(triggerRef, {
-    once:   isMobile,
+    once: isMobile,
     amount: isMobile ? 0.5 : 0.8
   });
 
@@ -57,13 +56,9 @@ const AboutSection = forwardRef(function AboutSection(_, ref) {
         initial="hidden"
         animate={controls}
       >
-        <Image
+        <img
           src={imgSrc}
           alt="Persona leyendo nube de palabras"
-          width={600}
-          height={400}
-          placeholder="blur"
-          blurDataURL="/img/placeholder.png"
           className={styles.image}
         />
       </motion.div>
