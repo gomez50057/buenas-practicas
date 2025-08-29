@@ -10,6 +10,22 @@ export default function CardsGrid({ cards, openModal }) {
   const defaultImg = '/img/caratulas/default.webp';
   const truncate = (str, max = 60) =>
     str.length > max ? str.slice(0, max - 3) + '...' : str;
+
+  // Función para capitalizar municipios
+  const formatMunicipio = (municipio) => {
+    if (!municipio) return '';
+    const exceptions = ['de', 'del', 'la', 'los', 'las', 'y'];
+    return municipio
+      .toLowerCase()
+      .split(' ')
+      .map((word, index) =>
+        exceptions.includes(word) && index !== 0
+          ? word
+          : word.charAt(0).toUpperCase() + word.slice(1)
+      )
+      .join(' ');
+  };
+
   return (
     <AnimatePresence>
       <motion.div
@@ -70,8 +86,9 @@ export default function CardsGrid({ cards, openModal }) {
 
                   <div className={styles.info}>
                     <h3 className={styles.title}>{truncate(name)}</h3>
-
-                    <span className={styles.subtitle}>{municipio}</span>
+                    <span className={styles.subtitle}>
+                      {formatMunicipio(Array.isArray(municipio) ? municipio[0] : municipio)}
+                    </span>
                   </div>
                 </Tooltip>
               </motion.div>
