@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -20,5 +20,8 @@
     "@eslint/eslintrc": "^3.3.3",
     "eslint": "^10.0.0",
     "eslint-config-next": "16.1.6"
+  },
+  "overrides": {
+    "ajv": "^8.18.0"
   }
 }
