@@ -9,11 +9,14 @@ import CardsGrid from './card/CardsGrid';
 import styles from '@/styles/CardContent.module.css';
 
 const categories = [
-  'Mineral de la Reforma',
-  'Pachuca de Soto',
-  'Villa de Tezontepec',
   'Alfajayucan',
+  'El Arenal',
+  'Mineral de la Reforma',
+  'Omitlán de Juárez',
+  'Pachuca de Soto',
+  'San Felipe Orizatlán',
   'Tizayuca',
+  'Villa de Tezontepec'
 ];
 
 export default function CardContent() {

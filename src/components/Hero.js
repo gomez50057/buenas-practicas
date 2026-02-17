@@ -63,7 +63,7 @@ export default function Hero() {
           width={133}
           height={134}
           loading="lazy"
-          alt="logo el fuego"
+          alt="ico representativo"
           variants={item}
           whileHover={{ scale: 1.03 }}
         />

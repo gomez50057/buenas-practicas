@@ -1,6 +1,56 @@
 export const datosBibliotecaDigital = {
   cards: [
     {
+      "name": "Metodología Automatizada para el Seguimiento y Evaluación del PMD mediante una Matriz Multicriterio con Pesos Ponderados",
+      "municipio": ["San Felipe Orizatlán"],
+      "description": "El proyecto consiste en una matriz la cual permite calcular puntajes, priorizar actividades y generar un porcentaje real de avance por línea de acción, estrategia y objetivo del Plan Municipal de Desarrollo.",
+      "año": "2025",
+      "ftSrc": "pdfs/edicion2025/fichaTecnica/Ficha Técnica San Felipe Orizatlán.pdf",
+      "peSrc": "pdfs/edicion2025/presentacion/Presentación San Felipe Orizatlán.pdf",
+      "imageName": "edicion2025/San Felipe Orizatlán 2025.jpg",
+      "projectsIndex": "6"
+    },
+    {
+      "name": "Planeación Democrática: La Ciencia de Datos aplicada para la toma de decisiones",
+      "municipio": ["Pachuca de Soto"],
+      "description": "Proceso que incorpora el modelo de ciencia de datos para jerarquizar, y analizar los problemas más urgentes en el municipio, así como la incorporación de las Tecnologías de Información y Comunicaciones en la plataforma de participación ciudadana.",
+      "año": "2025",
+      "ftSrc": "pdfs/edicion2025/fichaTecnica/Ficha Técnica Pachuca.pdf",
+      "peSrc": "pdfs/edicion2025/presentacion/Presentación Pachuca de Soto.pdf",
+      "imageName": "edicion2025/Pachuca de Soto 2025.jpg",
+      "projectsIndex": "7"
+    },
+    {
+      "name": "Implementación y seguimiento del Presupuesto Basado en Resultados (PBR), en conjunto con el Observatorio Ciudadano de Hidalgo A.C. a través del mecanismo Comité de Evaluación Municipal",
+      "municipio": ["Omitlán de Juárez"],
+      "description": "El proyecto consiste en que las instancias municipales gubernamentales y sociedad civil trabajen conjuntamente a través de la participación ciudadana, en el proceso de diseño, implementación, así como el seguimiento, evaluación de programas y proyectos presupuestarios, con el objetivo de mejorar la transparencia y rendición de cuentas.",
+      "año": "2025",
+      "ftSrc": "pdfs/edicion2025/fichaTecnica/Ficha Técnica Omitlán de Juárez.pdf",
+      "peSrc": "pdfs/edicion2025/presentacion/Presentación Omitlán de Juárez.pdf",
+      "imageName": "edicion2025/Omitlán de Juárez 2025.jpg",
+      "projectsIndex": "8"
+    },
+    {
+      "name": "Programa Municipal de Población 2024-2027",
+      "municipio": ["Mineral de la Reforma"],
+      "description": "El proyecto consiste en un documento que incorpora la información de la dimensión demográfica en la planificación y gestión pública municipal, teniendo como objetivo planear acciones que permitan atender las necesidades de la población en educación, salud, empleo, vivienda y servicios públicos.",
+      "año": "2025",
+      "ftSrc": "pdfs/edicion2025/fichaTecnica/Ficha Técnica Mineral de la Reforma.pdf",
+      "peSrc": "pdfs/edicion2025/presentacion/Presentación Mineral de la Reforma.pdf",
+      "imageName": "edicion2025/Mineral de la Reforma 2025.jpg",
+      "projectsIndex": "9"
+    },
+    {
+      "name": '"Generando la Identidad de tu Calle" - Nomenclatura de calles',
+      "municipio": ["El Arenal"],
+      "description": " El proyecto consiste en generar mecanismos de participación ciudadana para nombrar oficialmente las calles, avenidas y vialidades fomentando la identidad cultural y orden urbano.",
+      "año": "2025",
+      "ftSrc": "pdfs/edicion2025/fichaTecnica/Ficha Técnica El Arenal.pdf",
+      "peSrc": "pdfs/edicion2025/presentacion/Presentación El Arenal.pdf",
+      "imageName": "edicion2025/El Arenal 2025.jpg",
+      "projectsIndex": "10"
+    },
+    {
       "name": "Comités Vecinales - Visión Plural para el Desarrollo Municipal",
       "municipio": ["mineral de la reforma"],
       "description": "El proyecto consiste en un órgano de representación vecinal electo democraticamente por los demás vecinos con el objetivo de fortelecer el proceso de planeación democrática y participativa en la toma de decisiones del desarrollo municipal.",
