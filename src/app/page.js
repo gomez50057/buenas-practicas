@@ -1,7 +1,8 @@
 import HeroSection from "@/components/Hero";
 import AboutSection from "@/components/About";
 import CardContent from "@/components/CardContent";
-import VideoBanner from "@/components/VideoBanner";
+// import VideoBanner from "@/components/VideoBanner";
+import HaptichashSlider from "@/components/slider/HaptichashSlider";
 
 
 export default function HomePage() {
@@ -9,7 +10,8 @@ export default function HomePage() {
     <main>
       <HeroSection />
       <AboutSection />
-      <VideoBanner />
+      {/* <VideoBanner /> */}
+      <HaptichashSlider />
       <CardContent />
     </main>
   );
