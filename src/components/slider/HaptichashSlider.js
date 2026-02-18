@@ -12,7 +12,7 @@ import styles from "./HaptichashSlider.module.css";
 const BASE_PATH = "/img/slider/edicion2025";
 
 const FOLDERS = [
-  { slug: "", title: "2DA Edición Buenas Prácticas de Planeación Municipal", count: 14 },
+  { slug: "", title: "2DA Edición Buenas Prácticas de Planeación Municipal", count: 16 },
 ];
 
 const DEFAULT_DESC = "Galería de Fotos - Con Planeación, hay Transformación";
